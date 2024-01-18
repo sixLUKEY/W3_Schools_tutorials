@@ -5,16 +5,18 @@ class Car {
         this.name = name;
         this.year = year;
     }
-    age(){
-        const date = new Date();
-        return date.getFullYear() - this.year;
+    age(x){
+        return x - this.year;
     }
 }
+
+const date = new Date();
+let year = date.getFullYear();
 
 const car1 = new Car('Toyota', 2015);
 const car2 = new Car('Volkswagen', 2020);
 
-console.log(car1, car1.age()); 
+console.log(car1, car1.age(year)); 
 
 
 //? THE CONSTRUCTOR METHOD
