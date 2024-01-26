@@ -9,3 +9,4 @@ numbers.push(4);
 numbers.push('5'); // Can't push string into an integer array
 
 let head: number = numbers[0]; // No error
+
